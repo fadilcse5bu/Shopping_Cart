@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag & Drop</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js" type="module"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <button class="cart" id="cart">Cart (<span id="quantity">0</span>)</button>
+    <button class="clear-cart" id="clearCart">Clear Cart</button>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+  <div class="cart-details" id="cartDetails">
+    <div class="top">
+      <span class="top-cart">Cart</span>
+      <button class="close-icon" id="closeIcon">&times;</button>
+    </div>
+    <div class="content" id="content">
+      
+    </div>
+    <div class="footer">
+      <div class="total-price">Total Price: $<span id="totalPrice">0</span></div>
+      <button class="order-now" id="orderNow">Order now</button>
+    </div>
+  </div>
+
+  <div class="container-grid">
+    <div class="grid-content">
+      <div class="img">
+        <a href="#"><img src="images/laptops/1.jpg" alt=""></a>
+      </div>
+      <div class="par">
+        <a href="#"><p>HP Elitebook X360 830 G6 Core i5 8th Gen 13.3" FHD Touch Laptop</p></a>
+        <button data-selection-product="Elitebook-X360" data-single-price="800"> Add to cart </button> 
+        <span class="price" data-single-price="890">$890.00</span>
+      </div>
+    </div>
+
+    <div class="grid-content">
+      <div class="img">
+        <a href="#"><img src="images/laptops/2.jpg" alt=""></a>
+      </div>
+      <div class="par">
+        <a href="#"><p>HP Envy 13-ba0057TU Core i5 10th Gen, 512GB SSD 13.3" Full HD</p></a>
+        <button data-selection-product="13-ba0057TU" data-single-price="890"> Add to cart </button> 
+        <span class="price">$890.00</span>
+      </div>
+    </div>
+
+    <div class="grid-content">
+      <div class="img">
+        <a href="#"><img src="images/laptops/3.jpg" alt=""></a>
+      </div>
+      <div class="par">
+        <a href="#"><p>HP Envy 15-ep0141TX Core i7 10th Gen 1TB SSD 15.6" Full HD Laptop</p></a>
+        <button data-selection-product="15-ep0141TX" data-single-price="890"> Add to cart </button> 
+        <span class="price">$890.00</span>
+      </div>
+    </div>
+
+    <div class="grid-content">
+      <div class="img">
+        <a href="#"><img src="images/laptops/4.jpg" alt=""></a>      </div>
+      <div class="par">
+        <a href="#"><p>HP Pavilion 15-ec1003AX Ryzen 7 4800H GTX 1650Ti 4GB Graphics</p></a>
+        <button data-selection-product="15-ec1003AX" data-single-price="890"> Add to cart </button> 
+        <span class="price">$890.00</span>
+      </div>
+    </div>
+
+    <div class="grid-content">
+      <div class="img">
+        <a href="#"><img src="images/laptops/5.jpg" alt=""></a>      </div>
+      <div class="par">
+        <a href="#"><p>HP Pavilion 15-eg0078TU Core i7 11th Gen, 512GB SSD 15.6'' FHD Laptop</p></a>
+        <button data-selection-product="15-eg0078TU" data-single-price="890"> Add to cart </button> 
+        <span class="price">$890.00</span>
+      </div>
+    </div>
+
+    <div class="grid-content">
+      <div class="img">
+        <a href="#"><img src="images/laptops/6.jpg" alt=""></a>      </div>
+      <div class="par">
+        <a href="#"><p>HP Pavilion 15-eg0113TX Core i7 11th Gen 512GB SSD, MX450 2GB Graphics, 15.6'' FHD Laptop
+        </p></a>
+        <button data-selection-product="15-eg0113TX" data-single-price="890"> Add to cart </button> 
+        <span class="price">$890.00</span>
+      </div>
+    </div>
+
+    <div class="grid-content">
+      <div class="img">
+        <a href="#"><img src="images/laptops/7.jpg" alt=""></a>      </div>
+      <div class="par">
+        <a href="#"><p>HP Pavilion Gaming 16-a0095TX Core i5 10th Gen GTX 1650Ti 4GB Graphics 16.1" FHD Laptop</p></a>
+        <button data-selection-product="16-a0095TX" data-single-price="890"> Add to cart </button> 
+        <span class="price">$890.00</span>
+      </div>
+    </div>
+
+    <div class="grid-content">
+      <div class="img">
+        <a href="#"><img src="images/laptops/8.jpg" alt=""></a>
+      </div>
+      <div class="par">
+        <a href="#"><p>HP Pavilion Gaming 16-a0097TX Core i5 8GB RAM, 256GB SSD, 1TB HDD, 10th Gen GTX 1650Ti 4GB Graphics 16.1" FHD Laptop</p></a>
+        <button data-selection-product="16-a0097TX" data-single-price="890"> Add to cart </button> 
+        <span class="price">$890.00</span>
+      </div>
+    </div>
+
+    <div class="grid-content">
+      <div class="img">
+        <a href="#"><img src="images/laptops/9.jpg" alt=""></a>  
+      </div>
+      <div class="par">
+        <a href="#"><p>HP Spectre x360 13-Aw0224tu Core i7 10th Gen 13.3″ FHD Touch Laptop</p></a>
+        <button data-selection-product="13-Aw0224tu" data-single-price="890"> Add to cart </button> 
+        <span class="price">$890.00</span>
+      </div>
+    </div>
+
+    <div class="grid-content">
+      <div class="img">
+        <a href="#"><img src="images/laptops/10.jpg" alt=""></a>      </div>
+      <div class="par">
+        <a href="#"><p>HP Elitebook 830 G7 Core i5 10th Gen 512GB SSD 13.3" FHD Laptop</p></a>
+        <button data-selection-product="Elitebook-830" data-single-price="890"> Add to cart </button> 
+        <span class="price">$890.00</span>
+      </div>
+    </div>
+
+    <div class="grid-content">
+      <div class="img">
+        <a href="#"><img src="images/laptops/11.jpg" alt=""></a>      
+      </div>
+      <div class="par">
+        <a href="#"><p>HP Elitebook 840 G7 Core i5 10th Gen 512GB SSD 14.1" FHD Laptop</p></a>
+        <button data-selection-product="Elitebook-840" data-single-price="890"> Add to cart </button> 
+        <span class="price">$890.00</span>
+      </div>
+    </div>
+
+    <div class="grid-content">
+      <div class="img">
+        <a href="#"><img src="images/laptops/12.jpg" alt=""></a>      
+      </div>
+      <div class="par">
+        <a href="#"><p>HP 14s-CF3032TU Core i5 10th Gen 4GB RAM 14'' Full HD Laptop</p></a>
+        <button data-selection-product="14s-CF3032TU" data-single-price="890"> Add to cart </button> 
+        <span class="price">$890.00</span>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
