@@ -7,3 +7,5 @@ This is the home page.
 
 ### Add Product to the Cart
 ![](https://github.com/fadilcse5bu/Shopping_Cart/blob/main/images/cartList.png)
+
+### Clear all the list clicking Clear button
