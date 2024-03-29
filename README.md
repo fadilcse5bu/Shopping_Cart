@@ -1,6 +1,9 @@
 # Ecommerce Page Design
 
 ## How to open
-Run the index.html file
-<img src="https://images/homePage.png" alt="Main Image" width="200"/>
+### Run index.html file
 ![](https://github.com/fadilcse5bu/Shopping_Cart/blob/main/images/homePage.png)
+This is the home page.
+
+### Add Product to the Cart
+![](https://github.com/fadilcse5bu/Shopping_Cart/blob/main/images/cartList.png)
